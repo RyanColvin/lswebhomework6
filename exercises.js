@@ -58,58 +58,90 @@ function add(x, y) {
 
 function subtract(x, y) {
   //subtract y from x and return the value
+    var difference = x - y;
+    return difference;
 }
 
 function divide(x, y) {
   //divide x by y and return the value
+    var divide = x / y;
+    return divide;
 }
 
 function multiply(x, y) {
   //multiply x by y and return the value
+    var multiply = x * y;
+    return multiply;
 }
 
 function getRemainder(x, y) {
   //return the remainder from dividing x by y
+    var remainder = x % y;
+    return remainder;
 }
 
 function isEven(num) {
   //return true if num is even
   //otherwise return false
+    if (num % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function isOdd(num) {
   //return true if num is false
   //otherwise return false
+    if (num % 2 === 0) {
+        return false;
+    } else {
+        return true;
+    }
 }
 
 function square(num) {
   //square num and return the new value
+    var squared = Math.pow(num, 2);
+    return squared;
 }
 
 function cube(num) {
   //cube num and return the new value
+    var cubed = Math.pow(num, 3);
+    return cubed;
 }
 
 function raiseToPower(num, exponent) {
   //raise num to whatever power is passed in as exponent
+    var raised = Math.pow(num, exponent);
+    return raised;
 }
 
 function roundNumber(num) {
   //round num and return it
+    var rounded = Math.round(num);
+    return rounded;
 }
 
 function roundUp(num) {
   //round num up and return it
+    var roundUp = Math.ceil(num);
+    return roundUp;
 }
 
 function addExclamationPoint(str) {
   //add an exclamation point to the end of str and return the new string
   //'hello world' -> 'hello world!'
+    var newString = str + '!';
+    return newString;
 }
 
 function combineNames(firstName, lastName) {
   //return firstName and lastName combined as one string and separated by a space.
   //'Lambda', 'School' -> 'Lambda School'
+    var fullName = firstName + ' ' + lastName;
+    return fullName;
 }
 
 function getGreeting(name) {
