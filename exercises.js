@@ -147,24 +147,34 @@ function combineNames(firstName, lastName) {
 function getGreeting(name) {
   //Take the name string and concatenate other strings onto it so it takes the following form:
   //'Sam' -> 'Hello Sam!'
+    var greeting = 'Hello ' + name + '!';
+    return greeting;
 }
 
 //If you can't remember these area formulas then head over to Google or look at the test code.
 
 function getRectangleArea(length, width) {
   //return the area of the rectangle by using length and width
+    var area = length * width;
+    return area;
 }
 
 function getTriangleArea(base, height) {
   //return the area of the triangle by using base and height
+    var area = height * base / 2;
+    return area;
 }
 
 function getCircleArea(radius) {
   //return the rounded area of the circle given the radius
+    var area = Math.round(Math.PI * Math.pow(radius, 2));
+    return area;
 }
 
 function getRectangularPrismVolume(length, width, height) {
   //return the area of the 3D rectangular prism given the length, width, and height
+    var area = length * width * height;
+    return area;
 }
 
 //Do not modify code below this line.
